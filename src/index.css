@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Georgia", serif;
+  --font-display: "Georgia", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-accent: #b76e79;
+  --color-accent-muted: rgba(183,110,121,0.2);
+  --color-accent-deep: #3d2a2d;
+  --color-bg-soft: #fff5f7;
+}
+
+body {
+  background-color: var(--color-bg-soft);
+  color: var(--color-accent-deep);
+  overflow-x: hidden;
+  font-family: var(--font-serif);
+}
+
+.geometric-card {
+  background: white;
+  border: 1px solid var(--color-accent-muted);
+  box-shadow: 0 25px 50px -12px rgba(183,110,121,0.15);
+  border-radius: 2px;
+}
+
+.corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-color: var(--color-accent);
+  border-style: solid;
+}
+
+.top-left { top: 20px; left: 20px; border-width: 2px 0 0 2px; }
+.top-right { top: 20px; right: 20px; border-width: 2px 2px 0 0; }
+.bottom-left { bottom: 20px; left: 20px; border-width: 0 0 2px 2px; }
+.bottom-right { bottom: 20px; right: 20px; border-width: 0 2px 2px 0; }
